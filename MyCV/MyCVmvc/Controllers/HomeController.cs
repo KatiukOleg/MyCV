@@ -22,6 +22,36 @@ namespace MyCVmvc.Controllers
             return View();
         }
 
+        public IActionResult DevOpsSkills()
+        {
+            ViewData["Message"] = "My DevOps Skills";
+            return View();
+        }
+
+        public IActionResult Experience()
+        {
+            ViewData["Message"] = "My Experience";
+            return View();
+        }
+
+        public IActionResult Certificates()
+        {
+            ViewData["Message"] = "My Certificates";
+            return View();
+        }
+
+        public IActionResult Hobbies()
+        {
+            ViewData["Message"] = "My Hobbies";
+            return View();
+        }
+
+        public IActionResult Contacts()
+        {
+            ViewData["Message"] = "My Contacts";
+            return View();
+        }
+
 
         public IActionResult Index()
         {
