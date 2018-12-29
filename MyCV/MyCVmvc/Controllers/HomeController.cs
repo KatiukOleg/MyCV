@@ -16,6 +16,13 @@ namespace MyCVmvc.Controllers
             return View();
         }
 
+        public IActionResult DeveloperSkills()
+        {
+            ViewData["Message"] = "My Developer Skills";
+            return View();
+        }
+
+
         public IActionResult Index()
         {
             return View();

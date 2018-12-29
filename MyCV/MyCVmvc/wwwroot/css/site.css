@@ -14,9 +14,13 @@ h2 {
     color: darkorchid
 }
 
+div.txtcenter {
+    text-align: center;
+}
+
 @keyframes color-me-in {
     0% {
-        background-color: darkgray
+        background-color: darkgray;
     }
 
     100%{

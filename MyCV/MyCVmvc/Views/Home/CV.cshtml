@@ -1,6 +1,9 @@
 ﻿
 @{
-    Layout = null;
+    Layout = null/*"_Layout"*/;
+
+
+
 }
 
 <!DOCTYPE html>
@@ -12,24 +15,74 @@
     <link href="~/css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div>
-        <table width="100" height="100" align="center">
-            <tr>
-                <td align="center">
-                    <h1>Profile</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="~/images/selfi.jpg" alt="Photo" />
-                </td>
-            </tr>
-        </table>
-    </div>
-    <h2>Skills</h2>
-    <h3>Developer skills</h3>
-    <h3>DevOps skills</h3>
-    <h2>Experience</h2>
-    <h2>Hobby</h2>
+    <form asp-controller="Home" asp-action="CV">
+
+
+        <div>
+            <table width="100" height="100" align="center">
+                <tr>
+                    <td align="center">
+                        <h1>Oleg Katiuk. Profile</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="~/images/mainpage/selfi.jpg" alt="Photo" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <h2>Brief info</h2>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="txtcenter">
+            <p>
+                C# Developer / DevOps engineer in LoyaltyCoin AG / OrangeSputnik.
+                Familiar with microservices, CI-CD pipelines, scalability patterns.
+                Like to dive into new areas.
+            </p>
+        </div>
+
+        <div>
+            <table align="center">
+                <tr>
+                    <td>
+                        <img src="~/images/mainpage/developerskills.jpg" alt="Developer_Skills"
+                           title="Developer Skills" onclick="location.href='@Url.Action("DeveloperSkills", "Home")'" />
+                    </td>
+                    <td>
+                        <img src="~/images/mainpage/devopsskills.jpg" alt="DevOps_Skills"
+                             title="DevOps Skills" />
+                    </td>
+                    <td>
+                        <img src="~/images/mainpage/experience.jpg" alt="Experience"
+                             title="Experience" />
+                    </td>
+                    <td>
+                        <img src="~/images/mainpage/certificates.jpg" alt="Certificates"
+                             title="Certificates" />
+                    </td>
+                    <td>
+                        <img src="~/images/mainpage/hobbies.jpg" alt="Hobbies"
+                             title="Hobbies" />
+                    </td>
+                    <td>
+                        <img src="~/images/mainpage/mail.jpg" alt="Contacts"
+                             title="Contacts" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        @*<h2>Skills</h2>*@
+        @*<h2>Developer skills</h2>
+        <h2>DevOps skills</h2>
+        <h2>Experience</h2>
+        <h2>Hobby</h2>
+        <h2>Contacts</h2>*@
+    </form>
 </body>
 </html>
